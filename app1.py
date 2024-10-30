@@ -45,7 +45,7 @@ def get_response(user_input):
 
 # Streamlit 인터페이스
 st.title("이력서 챗봇")
-st.write("종게형에게 무엇이든 물어보세요.(5질문) 사는곳, 차, 어디팀, 나이, 여자친구 유무)
+st.write("종게형에게 무엇이든 물어보세요.(5질문) 사는곳, 차, 어디팀, 나이, 여자친구 유무")
 
 user_input = st.text_input("user", "")
 
