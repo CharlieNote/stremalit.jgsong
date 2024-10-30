@@ -8,9 +8,9 @@ encoder = SentenceTransformer('jhgan/ko-sroberta-multitask')
 
 # 식당 관련 질문과 답변 데이터
 questions = [
-    "종관이형의 집은 어디인가요?",
+    "종관이형 사는 곳 어디인가요?",
     "종관이형의 차는 무엇인가요?",
-    "종관이형의 현재 어디인가요?",
+    "종관이형의 현재 어디 팀 인가요?",
     "종관이형의 나이는 몇살인가요?",
     "종관이형은 여자친구가 있나요?"
 ]
@@ -45,7 +45,7 @@ def get_response(user_input):
 
 # Streamlit 인터페이스
 st.title("이력서 챗봇")
-st.write("종게의 무엇이든 물어보세요. 예) 종관이형의 차는 무엇인가요?")
+st.write("종게형에게 무엇이든 물어보세요.(5질문) 사는곳, 차, 어디팀, 나이, 여자친구 유무)
 
 user_input = st.text_input("user", "")
 
